@@ -1,13 +1,13 @@
 
-#Num2Geo
+# Num2Geo
 Num2Geo არის django Template tag რომელიც გვაძლევს საშუალებას 1.000.000-მდე ნებისმიერი რიცხვი გადავთარგმნოთ, მივუწეროთ ნებისმიერი ვალუტა და გამოვყოთ რიცხვი მძიმეებით.
 
 ##გამოყენების ინსტრუქცია
 ricxvebi.py ფაილს ვაგდებთ templatetags-ში და შემდეგ django template-ში გადასათარგმნელ ცვლადს ვუწერთ შემდეგნაირად {{ ricxvi|num2geo:'შესაბამისი პარამეტრი' }}.
 
-##მაგალითები
+## მაგალითები
 
-####template:
+#### template:
 ```
 {% load ricxvebi %}
 
@@ -24,17 +24,17 @@ ricxvebi.py ფაილს ვაგდებთ templatetags-ში და შ
 </html>
 ```
 
-####view:
+#### view:
 ```
 def demo(request):
     ricxvi = 500000
     return TemplateResponse(request, 'demo.html', {'ricxvi': ricxvi})
 ```
 
-####აბრუნებს:
+#### აბრუნებს:
 500000
 
 500,000.00 (ხუთასი ათასი და 0.00)
 
-###requirements
+### requirements
 ჯერჯერობით django 1.8 და python 2.7
